@@ -3,24 +3,23 @@ import EventCard from "@/components/EventCard.vue"
 import { ref, onMounted } from 'vue'
 import EventService from '@/services/EventService.js'
 
-let events = ref(null)
+const events = ref(null)
 
 onMounted(() => {
   EventService.getEvents()
   .then((response) => {
     events.value = response.data.events
   })
-  .catch((error) => {
-    console.log(error)
-  })
-});
+})
 
 </script>
 
 <template>
-  <h1>Events for Real</h1>
-  <div class="events">
-    <EventCard v-for="event in events" :key="event.id" :event="event"/>
+  <div v-if='events'>
+    <h1>Events for Real</h1>
+    <div class="events">
+      <EventCard v-for="event in events" :key="event.id" :event="event"/>
+    </div>
   </div>
 </template>
 

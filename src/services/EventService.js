@@ -12,5 +12,13 @@ const apiClient = axios.create({
 export default {
     getEvents() {
         return apiClient.get('/db.json')
+    },
+
+    getEvent(id) {
+        return apiClient.get('/db.json')
+        .then((response) => {
+            // return response.data.events.find((obj, index) => { console.log(obj, index); return obj.id == id })
+            return response.data.events.find((obj, index) => { if(obj.id == Number(id)) console.log(obj, index); return String(obj.id) == Number(id) })
+        })
     }
 }
