@@ -1,0 +1,47 @@
+{ 
+  "events": [
+  {
+    "id": 901001001,
+    "category": "animal welfare",
+    "description": "Get a free cat!",
+    "location": "Meow Town",
+    "title": "Cat Adoption Day",
+    "date": "January 28, 2023",
+    "time": "12:00",
+    "petsAllowed": true,
+    "organiser": "Cat Lady"
+  },
+  {
+    "id": 9101101101,
+    "category": "workshop",
+    "title": "Cybernetics 101",
+    "description": "Come cut your hand off!",
+    "location": "Down Town",
+    "date": "March 01, 2023",
+    "time": "12:00",
+    "petsAllowed": true,
+    "organiser": "Robot Lady"
+  },
+  {
+    "id": 9010111011,
+    "category": "workshop",
+    "title": "Carpentry 101",
+    "description": "Come cut your hand off!",
+    "location": "Chainsaw Academy",
+    "date": "June 18, 2023",
+    "time": "12:00",
+    "petsAllowed": true,
+    "organiser": "Wood Guy"
+  },
+  {
+    "id": 9110101101,
+    "category": "workshop",
+    "title": "Machining 101",
+    "description": "Come cut your hand off!",
+    "location": "Low Town",
+    "date": "August 11, 2023",
+    "time": "12:00",
+    "petsAllowed": false,
+    "organiser": "Joey Eight-Fingers"
+  }
+]}
